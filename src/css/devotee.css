@@ -1,0 +1,68 @@
+body{
+    background-color: #ffa76b;
+}
+
+.devotee-popup {
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 20px 10px;
+    display: flex;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.devotee-name,
+.devotee-mobile,
+.add {
+    border: 1px solid #000;
+    display: flex;
+
+}
+
+.devotee-name div:first-child,
+.devotee-mobile div:first-child {
+    margin-right: 5px;
+}
+.devotee-name div:last-child input,
+.devotee-mobile div:last-child input {
+    height: 25px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    
+    .devotee-popup{
+        background-color: black;
+        display:block;
+    }
+    .devotee-name, .devotee-mobile, .add{
+        display:block;
+        padding-right: 10px;
+    }
+    .devotee-name div:last-child,
+.devotee-mobile div:last-child,.devotee-name div:last-child input,
+.devotee-mobile div:last-child input {
+   width:100%;
+}
+
+
+.devotee-name div:first-child,
+.devotee-mobile div:first-child {
+    margin-bottom: 5px;
+}
+
+    /* show it on small screens */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .devotee-popup{
+        background-color: green;
+    }
+
+    /* hide it elsewhere */
+}
+

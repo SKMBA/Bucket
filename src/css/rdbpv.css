@@ -1,0 +1,133 @@
+/* body
+{
+    font-size: 1.3rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+} */
+
+
+:root {
+    --filter-height: 167px;
+}
+
+.rdbpv-container {
+    background-color: black;
+    color: white;
+    /* border: 1px solid red; */
+    padding: 10px 15px 10px 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.rdbpv-container .ddl-container {
+    margin: 8px 0px;
+    /* border: 1px solid red; */
+    min-width: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rdbpv-container select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px 0px;
+}
+
+.rdbpv-container label {
+    min-width: 100px;
+}
+
+.rdbpv-container .btn-apply {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.r-filter-button>i,
+.r-filter-custom-button {
+    color: #fff;
+    z-index: 5;
+    font-size: 2.5em;
+    top: 100px;
+    right: 85px;
+    position: fixed !important;
+    text-shadow: 6px 5px 7px #151414;
+    cursor: pointer;
+}
+
+.r-filter-button>i {
+    right: 29px;
+}
+
+.r-filter-custom-button {
+    right: 85px;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 578px) {
+    .rdbpv-container {
+        /* background-color: brown; */
+        display: block;
+    }
+
+    .rdbpv-container .ddl-container {
+        margin: 0;
+        display: block;
+    }
+
+    .rdbpv-container select {
+        padding: 8px 0px;
+        margin-bottom: 0.5rem;
+    }
+
+    .rdbpv-container label {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 579px) and (max-width: 992px) {
+    .rdbpv-container {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1380px) {
+
+    /* .rdbpv-container {
+        background-color: green;
+    } */
+    .rdbpv-container .ddl-container {
+        min-width: 45vw;
+    }
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* @media screen and (min-width: 0px) and (max-width: 480px) {
+    .rdbpv-container {
+        background-color: red;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .rdbpv-container {
+        background-color: green;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .rdbpv-container {
+        background-color: magenta;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+    .rdbpv-container {
+        background-color: cyan;
+    }
+} */

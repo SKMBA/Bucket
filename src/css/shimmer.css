@@ -1,0 +1,46 @@
+.shimmer-no-animate {
+    color: #ffdec8;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+
+.shimmer {
+    color: #ffdec8;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    /* }
+  
+  .shimmer-animate { */
+    /* background: linear-gradient(to right, #1a1818 8%, #f0f0f0 18%, #c91010 33%);
+  background-size: 1000px 100%;
+  animation: shimmer 2.2s linear infinite forwards!important; */
+
+    /* Animated shimmer*/
+    animation-duration: 8.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: #ddd;
+    background: linear-gradient(to right, #000000 8%, #ff9100 18%, #000000 33%) fixed;
+    background-size: 100vw 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+
+    100% {
+        background-position: 1200px 0;
+    }
+}
+
+.shimmer-no-animate>div,
+.shimmer>div {
+    /* margin-top: 20px; */
+    padding: 10px;
+    font-size: 20px;
+}
